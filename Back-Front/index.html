@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página do Professor</title>
+  </head>
+  <body>
+    <h1>Página do professor</h1>
+
+    <input
+      type="button"
+      onclick="preencheProdutosDoBanco()"
+      name="carregar"
+      value="Carregar"
+    />
+    <br /><br />
+
+    <fieldset>
+      <input type="text" id="id" placeholder="id" /><br />
+      <input type="text" id="nome" placeholder="nome" /><br />
+      <input type="text" id="descricao" placeholder="descrição" /><br />
+      <input type="text" id="quantidade" placeholder="quantidade" /><br />
+      <input
+        type="button"
+        onclick="insereProduto()"
+        name="Enviar"
+        value="Enviar"
+      />
+    </fieldset>
+
+    <br /><br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nome</th>
+          <th>descrição</th>
+          <th>quantidade</th>
+          <th>ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-produtos"></tbody>
+    </table>
+
+    <div id="valor"></div>
+
+  </body>
+</html>
